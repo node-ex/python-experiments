@@ -1,0 +1,32 @@
+{
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  // "files.associations": {
+  // },
+  "json.format.enable": true,
+  "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+  "python.autoComplete.extraPaths": [],
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.maxNumberOfProblems": 50,
+  "python.linting.mypyEnabled": true,
+  "python.linting.mypyPath": "${workspaceFolder}/.venv/bin/mypy",
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintPath": "${workspaceFolder}/.venv/bin/pylint",
+  "python.linting.ignorePatterns": [
+    ".git/*",
+    ".vscode/*",
+    ".venv/*",
+    "**/site-packages/**/*.py",
+  ],
+  "[json]": {
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[python]": {
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  }
+}
