@@ -7,6 +7,6 @@ source ${SCRIPT_FOLDER}/.venv-activate.sh
 
 set -Eeuxo pipefail
 
-pylint --rcfile=./.pylintrc ./src/main.py
+pylint --rcfile ./.pylintrc ./src
 
 set +Eeuxo pipefail

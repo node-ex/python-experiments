@@ -7,6 +7,6 @@ source ${SCRIPT_FOLDER}/.venv-activate.sh
 
 set -Eeuxo pipefail
 
-mypy --config-file ./mypy.ini ./src
+FLASK_APP=./src/flask_experiments/experiments.py FLASK_ENV=development python -m flask run
 
 set +Eeuxo pipefail

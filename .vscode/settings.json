@@ -5,14 +5,29 @@
   // },
   "json.format.enable": true,
   "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
-  "python.autoComplete.extraPaths": [],
+  // "python.envFile": "${workspaceFolder}/python.dev.linux.env",
+  "python.autoComplete.extraPaths": [
+    "${workspaceFolder}/src"
+  ],
+  "python.jediEnabled": false,
+  // "python.jediPath": "${workspaceFolder}/.venv/lib/python3.7/site-packages",
   "python.linting.enabled": true,
   "python.linting.lintOnSave": true,
   "python.linting.maxNumberOfProblems": 50,
   "python.linting.mypyEnabled": true,
   "python.linting.mypyPath": "${workspaceFolder}/.venv/bin/mypy",
+  "python.linting.mypyArgs": [
+    "--config-file",
+    "${workspaceFolder}/mypy.ini"
+  ],
   "python.linting.pylintEnabled": true,
   "python.linting.pylintPath": "${workspaceFolder}/.venv/bin/pylint",
+  "python.linting.pylintArgs": [
+    "--rcfile",
+    "${workspaceFolder}/.pylintrc"
+    // "--init-hook",
+    // "from pylint.config import find_pylintrc; import os, sys; sys.path.append('${workspaceFolder}', 'src'))"
+  ],
   "python.linting.ignorePatterns": [
     ".git/*",
     ".vscode/*",
